@@ -8,5 +8,5 @@ const assertEqual = function(actual, expected) {
 
 const head = function(array) {
   x = array[0];
-  return x
+  return x;
 }
