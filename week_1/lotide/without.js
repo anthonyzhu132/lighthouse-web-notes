@@ -30,6 +30,6 @@ const without = function(array, itemsToRemove) {
     }
   }
   return newArray;
-}
+} 
 
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
