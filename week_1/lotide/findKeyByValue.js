@@ -1,4 +1,4 @@
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
@@ -13,11 +13,12 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(objects, value) {
-  for(let topic of Object.keys(objects)) {
-    if(objects[topic] === value) {
+  for (let topic of Object.keys(objects)) {
+    console.log(objects[topic]);
+    if (objects[topic] === value) {
       return topic;
-    } 
     }
+  }
 };
 
 
