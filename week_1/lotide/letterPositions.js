@@ -5,15 +5,15 @@ const eqArrays = function(array1, array2) {
     } 
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(array1, array2) {
-  if(eqArrays(array1, array2)) {
+  if (eqArrays(array1, array2)) {
     console.log("These arrays match");
   } else {
     console.log("These arrays do not match");
   }
-}
+};
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -23,15 +23,19 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// LETTER POSITIONS //
 const letterPositions = function(sentence) {
   const results = {};
     for (var i = 0; i < sentence.length; i++) {
-      const letter = sentence[i];
-      if(results[letter]) {
-        results[letter].push(i)
+    const letter = sentence[i];
+    if (sentence[i] !== " ") {
+      if (results[letter]) {
+        results[letter].push(i);
       } else {
-        results[letter] = [i]
+        results[letter] = [i];
       }
+    }
+    // eslint-disable-next-line indent
     }
   return results;
 };
