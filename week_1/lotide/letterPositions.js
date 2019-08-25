@@ -2,7 +2,7 @@ const eqArrays = function(array1, array2) {
   for (var i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       return false;
-    } 
+    }
   }
   return true;
 };
@@ -26,7 +26,7 @@ const assertEqual = function(actual, expected) {
 // LETTER POSITIONS //
 const letterPositions = function(sentence) {
   const results = {};
-    for (var i = 0; i < sentence.length; i++) {
+  for (let i = 0; i < sentence.length; i++) {
     const letter = sentence[i];
     if (sentence[i] !== " ") {
       if (results[letter]) {
