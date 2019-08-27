@@ -1,0 +1,20 @@
+{
+  "name": "@anthonyzhu132/lotide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Anthony Zhu <anthonyzhu132@gmail.com> (https://github.com/anthonyzhu132)",
+  "license": "ISC"
+}
