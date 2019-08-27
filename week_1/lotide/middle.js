@@ -1,19 +1,5 @@
-const eqArrays = function(array1, array2) {
-  for (var i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    } 
-  }
-  return true;
-}
-
-const assertArraysEqual = function(array1, array2) {
-  if(eqArrays(array1, array2)) {
-    console.log("These arrays match");
-  } else {
-    console.log("These arrays do not match");
-  }
-}
+const eqArrays = require("./eqArrays");
+const assertArraysEqual = require("./assertArraysEqual");
 
 const middle = function(array) {
   let middleArray = [];
@@ -31,4 +17,4 @@ const middle = function(array) {
   return middleArray;
 };
 
-console.log(middle([1, 2, 3]));
+module.exports = middle;
